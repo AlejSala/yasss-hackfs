@@ -1,0 +1,67 @@
+```//"Token Metadata JSON Schema": a Standard for Smart Contract Interoperability across chains with richer Metadata.
+**Value of a Token -beyond: price! there is much more to Creator Value than Asset Price!**
+
+- (i) Proof of Value [PoV]
+- (ii) Token Provenance from DoM [Day of Mint]  
+- (iii) Append Value to NFTs: Incremental Life Time Value [LTV] 
+
+Proposed **"Additional"** Transaction Hash Method Categories/Attributes. Searchable by Address/Txn Hash/ Block/ Ens and included in Token Metadata JSON Schema. 
+- [ ]  NFT accrete-Value Blockchain Provenance
+    - [ ]  Blockchain Transaction Hash Methods: as Engagement NFTCreator < — > Peer/NFTNewOwner&UseWhileOwner
+        - [ ]  Mint
+        - [ ]  Exhibit (e.g. ArtBasel NoGallery DAO First NFT Experience [Exhibit/VR/AR])
+        - [ ]  Mutate (e.g Async NFTOwner set of Creator approved edits, Async NFTCreator change access to NFTOwner's NFT)
+        - [ ]  Access
+        - [ ]  Attend
+        - [ ]  Participate
+        - [ ]  Win
+        - [ ]  Vote
+
+Imagine, "Token Metadata JSON Schema" [Hedera HIP-10.mk] (https://github.com/hashgraph/hedera-improvement-proposal/blob/master/HIP/hip-10.md)
+Yes, AND ... ```
+
+
+{
+    "title": "Token Metadata",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string",
+            "description": "Identifies the asset to which this token represents."
+        },
+        "decimals": {
+            "type": "integer",
+            "description": "The number of decimal places that the token amount should display."
+        },
+        "description": {
+            "type": "string",
+            "description": "Describes the asset to which this token represents."
+        },
+        "image": {
+            "type": "string",
+            "description": "A URI pointing to a resource with mime type image/* representing the asset to which this token represents. Consider making any images at a width between 320 and 1080 pixels and aspect ratio between 1.91:1 and 4:5 inclusive."
+        },
+        "properties": {
+            "type": "object",
+            "description": "Arbitrary properties. Values may be strings, numbers, object or arrays."
+        },
+        "localization": {
+            "type": "object",
+            "required": ["uri", "default", "locales"],
+            "properties": {
+                "uri": {
+                    "type": "string",
+                    "description": "The URI pattern to fetch localized data from. This URI should contain the substring `{locale}` which will be replaced with the appropriate locale value before sending the request."
+                },
+                "default": {
+                    "type": "string",
+                    "description": "The locale of the default data within the base JSON"
+                },
+                "locales": {
+                    "type": "array",
+                    "description": "The list of locales for which data is available. These locales should conform to those defined in the Unicode Common Locale Data Repository (http://cldr.unicode.org/)."
+                }
+            }
+        }
+    }
+}
