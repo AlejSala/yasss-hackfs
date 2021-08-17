@@ -1,14 +1,14 @@
 {
-  "name": "yasss-dapp",
+  "name": "yasss-hackfs",
   "homepage": ".",
-   "description": "AYasss a DWeb3App. Creator-Owned decentralized Creator-to-Peer Marketplace of NFT digital hyper-media [stream, image, video, audio, text].  24/7cross-border exhibit, gallery, art market, store to subscribe to a life-time relationship with creator and like-minded-peer community.",
+   "description": "Yasss a DWeb3App. Creator-Owned decentralized Creator-to-Peer Marketplace of NFT digital hyper-media [stream, image, video, audio, text].  24/7cross-border exhibit, gallery, art market, store to subscribe to a life-time relationship with creator and like-minded-peer community.",
   "version": "0.1.0",
   "private": true,
   
   "author": {
-  "name" : "Alejandra M. Salaverriae",
+  "name" : "Alejandra M. Salaverria",
   "email" : "allyalejandra@pm.me",
-  "url" : "https://alejandra-m-salaverria.com/"
+  "url" : "https://alejandra-m-salaverria.com"
 },
   
   "funding": {
